@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="=Lai:Bzpa:Q~h#2,ASTg">Player</variable><variable type="KIND_SpriteKind" id="=X=T9.;_R`CT`zF_Kzc}">Projectile</variable><variable type="KIND_SpriteKind" id=",*J%uK$VBOcV$drZbUa%">Food</variable><variable type="KIND_SpriteKind" id="a2O)*84b75=.Xym0^6E%">Enemy</variable><variable id="Hkt;f$`VD_07*xiP.J5/">mySprite</variable><variable id="b%v%cM!PR~$VE`l1DMKr">pizza</variable><variable id="o#EO63]K%;|ENW82vY8T">burger</variable></variables><block type="pxt-on-start" id="*OuBh@E*fQ^S:d7==sV!" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="(H}LUjV+F(ObD!t%`rSh"><field name="VAR" id="b%v%cM!PR~$VE`l1DMKr">pizza</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="`Eg0PwL)7/pqE{mZ~$MI"><value name="img"><shadow type="screen_image_picker" id="0WCX@u:Mv[$Dtg+:gI=;"><field name="img">img`
+. . . . . . f f f f . . . . . . 
+. . . . f f f 2 2 f f f . . . . 
+. . . f f f 2 2 2 2 f f f . . . 
+. . f f f e e e e e e f f f . . 
+. . f f e 2 2 2 2 2 2 e e f . . 
+. . f e 2 f f f f f f 2 e f . . 
+. . f f f f e e e e f f f f . . 
+. f f e f b f 4 4 f b f e f f . 
+. f e e 4 1 f d d f 1 4 e e f . 
+. . f e e d d d d d d e e f . . 
+. . . f e e 4 4 4 4 e e f . . . 
+. . e 4 f 2 2 2 2 2 2 f 4 e . . 
+. . 4 d f 2 2 2 2 2 2 f d 4 . . 
+. . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+. . . . . f f f f f f . . . . . 
+. . . . . f f . . f f . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"0WCX@u:Mv[$Dtg+:gI=;"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="c,b_n(;uTR@4cU`?4Bal"><field name="MEMBER">Player</field></shadow></value></block></value></block></statement></block><block type="keyonevent" id="js2QQ2Jj/;uDS]ku+.Ni" x="320" y="260"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="controls_if" id="*[^aRiZ#gDR%`I_$YJKX"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="variables_get" id="y|NzUB3c6Eyv]4eG`iVp"><field name="VAR" id="b%v%cM!PR~$VE`l1DMKr">pizza</field></block></value><statement name="DO0"><block type="startEffectOnSprite" id="1Jg^WC6LZl];]~X,FEV*"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="effect">effects.fire</field><value name="sprite"><block type="variables_get" id="#itErkh[ae~Np!8Mr+Dt"><field name="VAR" id="b%v%cM!PR~$VE`l1DMKr">pizza</field></block></value><value name="duration"><shadow type="timePicker" id="lvvz)1ya[A*%Xl#BZN$e"><field name="ms">500</field></shadow></value></block></statement><statement name="ELSE"><block type="startEffectOnSprite" id="--.c?uvJ|dy-`lh35VLq"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><field name="effect">effects.rings</field><value name="sprite"><block type="variables_get" id="wp?K9z0tyl;zspb^OMnk"><field name="VAR" id="b%v%cM!PR~$VE`l1DMKr">pizza</field></block></value><value name="duration"><shadow type="timePicker" id="a:}$}vp%q;_kt;:~Vz)Q"><field name="ms">500</field></shadow></value></block></statement></block></statement></block></xml>
